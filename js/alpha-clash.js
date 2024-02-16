@@ -6,8 +6,15 @@
 //     playGround.classList.remove('hidden');
 // }
 
+function continueGame() {
+    // Generate Random Alphabet 
+    const alphabet = getARandomAlphabet();
+    console.log(alphabet);
+}
+
 function playNow() {
     hideElementById('home');
     showElementById('play-ground');
+    continueGame();
 
 }
