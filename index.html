@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alpha Clash Pro</title>
     <!--! CSS  -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
     <!--! Daisy UI and Tailwind CSS  -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
@@ -15,22 +15,87 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="font-poppins">
-    <main class="min-h-screen bg-[#010313]   bg-[url(images/background.png)] bg-no-repeat bg-center ">
-        <section class="home min-h-screen  text-white flex justify-center  items-center ">
-           <div class="flex flex-col items-center gap-5">
-            <h1 class="text-8xl font-anton uppercase">Alpha Clash Pro</h1>
-            <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-            <button class="btn bg-white text-black">Play Now</button>
+    <main
+      class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center"
+    >
+      <section
+        class="home min-h-screen text-white flex justify-center items-center hidden"
+      >
+        <div class="flex flex-col items-center gap-5">
+          <h1 class="text-8xl font-anton uppercase">Alpha Clash Pro</h1>
+          <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+          <button class="btn bg-white text-black">Play Now</button>
+        </div>
+      </section>
+      <!--! Play Fround Start  -->
+      <section class="play-ground">
+        <div>
+          <!--? Screen  -->
+         
+           <div class="flex justify-center my-12">
+            <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
+                <div class=" rounded-lg flex justify-center">
+                    <p class="text-white text-xl bg-black px-4 rounded-md">Don't watch keyboard  while playing...</p>
+                </div>
+                <p class="text-black text-9xl flex justify-center h-full items-center">Y</p>
+            </div>
            </div>
-        </section>
-    
-        <section class="play-ground">
-    
-        </section>
-    
-        <section class="score">
-            
-        </section>
+         
+          <!--? Keyboard  -->
+          <div>
+            <div class="flex justify-center text-black gap-1 my-1 w-full">
+              <kbd class="kbd bg-white">q</kbd>
+              <kbd class="kbd bg-white">w</kbd>
+              <kbd class="kbd bg-white">e</kbd>
+              <kbd class="kbd bg-white">r</kbd>
+              <kbd class="kbd bg-white">t</kbd>
+              <kbd class="kbd bg-white">y</kbd>
+              <kbd class="kbd bg-white">u</kbd>
+              <kbd class="kbd bg-white">i</kbd>
+              <kbd class="kbd bg-white">o</kbd>
+              <kbd class="kbd bg-white">p</kbd>
+            </div>
+            <div class="flex justify-center gap-1 text-black my-1 w-full">
+              <kbd class="kbd bg-white">a</kbd>
+              <kbd class="kbd bg-white">s</kbd>
+              <kbd class="kbd bg-white">d</kbd>
+              <kbd class="kbd bg-white">f</kbd>
+              <kbd class="kbd bg-white">g</kbd>
+              <kbd class="kbd bg-white">h</kbd>
+              <kbd class="kbd bg-white">j</kbd>
+              <kbd class="kbd bg-white">k</kbd>
+              <kbd class="kbd bg-white">l</kbd>
+            </div>
+            <div class="flex justify-center gap-1 text-black my-1 w-full">
+              <kbd class="kbd bg-white">z</kbd>
+              <kbd class="kbd bg-white">x</kbd>
+              <kbd class="kbd bg-white">c</kbd>
+              <kbd class="kbd bg-white">v</kbd>
+              <kbd class="kbd bg-white">b</kbd>
+              <kbd class="kbd bg-white">n</kbd>
+              <kbd class="kbd bg-white">m</kbd>
+              <kbd class="kbd bg-white">/</kbd>
+            </div>
+          </div>
+
+          <!--? life score  -->
+          <div class="flex justify-between px-32">
+            <button class="btn text-white rounded-full bg-purple-500">
+                Life 
+                <img src="images/Group 23.svg" alt="">
+                <span>1</span>
+              </button>
+            <button class="btn rounded-full text-white bg-blue-400">
+               
+                Score
+                <img src="images/monetization_on.svg" alt="">
+                <span>1</span>
+              </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="score"></section>
     </main>
   </body>
 </html>
