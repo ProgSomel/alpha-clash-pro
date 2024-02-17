@@ -39,44 +39,44 @@
                 <div class=" rounded-lg flex justify-center">
                     <p class="text-white text-xl bg-black px-4 rounded-md">Don't watch keyboard  while playing...</p>
                 </div>
-                <p class="text-black text-9xl flex justify-center h-full items-center">Y</p>
+                <p id="current-alphabet" class="text-black text-9xl flex justify-center h-full items-center uppercase">Y</p>
             </div>
            </div>
          
           <!--? Keyboard  -->
           <div>
             <div class="flex justify-center text-black gap-1 my-1 w-full">
-              <kbd class="kbd bg-white">q</kbd>
-              <kbd class="kbd bg-white">w</kbd>
-              <kbd class="kbd bg-white">e</kbd>
-              <kbd class="kbd bg-white">r</kbd>
-              <kbd class="kbd bg-white">t</kbd>
-              <kbd class="kbd bg-white">y</kbd>
-              <kbd class="kbd bg-white">u</kbd>
-              <kbd class="kbd bg-white">i</kbd>
-              <kbd class="kbd bg-white">o</kbd>
-              <kbd class="kbd bg-white">p</kbd>
+              <kbd id="q" class="kbd bg-white">q</kbd>
+              <kbd id="w" class="kbd bg-white">w</kbd>
+              <kbd id="e" class="kbd bg-white">e</kbd>
+              <kbd id="r" class="kbd bg-white">r</kbd>
+              <kbd id="t" class="kbd bg-white">t</kbd>
+              <kbd id="y" class="kbd bg-white">y</kbd>
+              <kbd id="u" class="kbd bg-white">u</kbd>
+              <kbd id="i" class="kbd bg-white">i</kbd>
+              <kbd id="o" class="kbd bg-white">o</kbd>
+              <kbd id="p" class="kbd bg-white">p</kbd>
             </div>
             <div class="flex justify-center gap-1 text-black my-1 w-full">
-              <kbd class="kbd bg-white">a</kbd>
-              <kbd class="kbd bg-white">s</kbd>
-              <kbd class="kbd bg-white">d</kbd>
-              <kbd class="kbd bg-white">f</kbd>
-              <kbd class="kbd bg-white">g</kbd>
-              <kbd class="kbd bg-white">h</kbd>
-              <kbd class="kbd bg-white">j</kbd>
-              <kbd class="kbd bg-white">k</kbd>
-              <kbd class="kbd bg-white">l</kbd>
+              <kbd id="a" class="kbd bg-white">a</kbd>
+              <kbd id="s" class="kbd bg-white">s</kbd>
+              <kbd id="d" class="kbd bg-white">d</kbd>
+              <kbd id="f" class="kbd bg-white">f</kbd>
+              <kbd id="g" class="kbd bg-white">g</kbd>
+              <kbd id="h" class="kbd bg-white">h</kbd>
+              <kbd id="j" class="kbd bg-white">j</kbd>
+              <kbd id="k" class="kbd bg-white">k</kbd>
+              <kbd id="l" class="kbd bg-white">l</kbd>
             </div>
             <div class="flex justify-center gap-1 text-black my-1 w-full">
-              <kbd class="kbd bg-white">z</kbd>
-              <kbd class="kbd bg-white">x</kbd>
-              <kbd class="kbd bg-white">c</kbd>
-              <kbd class="kbd bg-white">v</kbd>
-              <kbd class="kbd bg-white">b</kbd>
-              <kbd class="kbd bg-white">n</kbd>
-              <kbd class="kbd bg-white">m</kbd>
-              <kbd class="kbd bg-white">/</kbd>
+              <kbd id="z" class="kbd bg-white">z</kbd>
+              <kbd id="x" class="kbd bg-white">x</kbd>
+              <kbd id="c" class="kbd bg-white">c</kbd>
+              <kbd id="v" class="kbd bg-white">v</kbd>
+              <kbd id="b" class="kbd bg-white">b</kbd>
+              <kbd id="n" class="kbd bg-white">n</kbd>
+              <kbd id="m" class="kbd bg-white">m</kbd>
+              <kbd id="/" class="kbd bg-white">/</kbd>
             </div>
           </div>
 
@@ -85,25 +85,27 @@
             <button class="btn text-white rounded-full bg-purple-500">
                 Life 
                 <img src="images/Group 23.svg" alt="">
-                <span>1</span>
+                <span id="life">5</span>
               </button>
             <button class="btn rounded-full text-white bg-blue-400">
                
                 Score
                 <img src="images/monetization_on.svg" alt="">
-                <span>1</span>
+                <span id="score">0</span>
               </button>
           </div>
         </div>
       </section>
+
       <!--! Score  -->
-      <section class="score flex justify-center items-center min-h-screen hidden">
+      <section id="score-screen" class="score flex justify-center items-center min-h-screen hidden">
         <div class="text-white text-center space-y-5 bg-[#FFFFFF33] p-4 rounded-lg">
+          <h4 class="text-3xl">Game Over</h4>
             <h1 class="text-8xl">
                 <span class="font-extrabold">Score: </span>
-                <span>14</span>
+                <span id="final-score">14</span>
             </h1>
-            <button class="btn bg-white text-black font-bold">Play Again</button>
+            <button onclick="playNow()" class="btn bg-white text-black font-bold">Play Again</button>
             <p>Practice Make You A Pro</p>
         </div>
       </section>
